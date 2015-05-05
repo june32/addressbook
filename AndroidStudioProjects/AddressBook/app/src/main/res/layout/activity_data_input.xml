@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".InputActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/input_Name"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/input_Phone"
+        android:layout_weight="1"
+        android:hint="Phone"
+        android:layout_below="@+id/input_Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:layout_below="@+id/input_Phone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:id="@+id/button_save"
+        android:layout_below="@+id/tv_result"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:id="@+id/button_cancel"
+        android:layout_toRightOf="@+id/button_save"
+        android:layout_alignBaseline="@+id/button_save"
+        android:layout_marginTop="60dp" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:id="@+id/button_reset"
+        android:layout_toRightOf="@+id/button_cancel"
+        android:layout_alignBaseline="@+id/button_save"
+        android:layout_marginTop="60dp"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+
